@@ -1,1 +1,0 @@
-- este es un readme 2
