@@ -24,7 +24,7 @@ while salir !=True:
     
     
     
-    option = int(input("Seleccione una Opcion [1-2-3]:"))
+    option = int(input("Seleccione una Opcion [1-2-3-4]:"))
     
     ## opcion 1 list alumno
     if option == 1:
@@ -36,6 +36,9 @@ while salir !=True:
     elif option == 2:
         new_alumno = input("Ingrese Nombre Completo de Alumno:")
         list.append(new_alumno)
+    elif option == 3:
+        delete_alumno = input("Ingrese ALmno a eliminar:")
+        list.remove(delete_alumno)
     elif option == 4:
         print ("bye!")
         salir = True
