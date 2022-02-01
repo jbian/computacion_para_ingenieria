@@ -68,13 +68,16 @@ else:
 
 edad = 10
 
-while edad <= 17:
-    print(f'Menor de edad!!! {edad}')
-    edad = edad + 1 # ---> edad += 1
-
-print(f'Mayor de edad {edad}')
-
-
-
- 
-
+# syntax
+"""
+while <<condicion>>:
+    <<codigo 1>>
+    <<codigo 2>>
+    <<codigo 3>>
+    
+"""
+salir = False
+while salir != True:
+    
+    
+    
