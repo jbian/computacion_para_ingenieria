@@ -22,10 +22,4 @@ entrada= input("ingrese una palabra:")
 palabraInvertida = invertirCadena(entrada)
 print(palabraInvertida)
 
-cadena1="hola"
-cadena2="mundo"
-caracter_espacion= " "
-mensaje = cadena1 +  caracter_espacion + cadena2
-# hola mundo
-print(mensaje)
 
