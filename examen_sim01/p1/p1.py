@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb  7 07:05:13 2022
+Created on Tue Feb  8 06:55:00 2022
 
 @author: Diesel soft server
 """
 
-palabra = input("Ingrese uns palabra:")
+palabra=input("Ingrese una palabra:")
+sum = 0
+for char in palabra:
+    sum=sum+1
 
-
-
+print(f"el numero de caracteres de {palabra} es: {sum}")
 
