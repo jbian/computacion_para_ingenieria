@@ -1,28 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  9 07:18:46 2022
-@author: HP
-"""
+# Dado el archivo estudiantes.txt y notas.txt unir en un solo archivo llamado primer_parcial.txt que contendra los nombre seguido de su nota
+notas = open('notas.txt', 'r+')
+alumnos = open('estudiantes.txt', 'r+')
+salida = open('primer_parcial.txt', 'w+')
 
-# pregunta 1 
-# Dada una cadena verificar que sea palindroma(es aquella palabra que se lee lo mismo al derecho y al reves e.j Ana)
-def espalindromo (frasee):
-    frasee= frasee.lower()
-    frasee= frasee.replace('' ,'')
-    longit = len(frasee)
-    
+lineasNotas = notas.readlines()
 
-    if longit % 2==0 :
-        izquier = frasee[:longit //2 ]
-        dercha = frasee [longit //2:]
-    else:
-        izquier = frasee[:longit //2 ]
-        dercha = frasee [longit //2 + 1]
-        
-    return izquier == dercha [::-1 ] 
+for nota in lineasNotas:
+    estudiante=alumnos.readline()
+    salida.write(nota +' '+ estudiante)
 
-    
-print( espalindromo('ana'))
-print(espalindromo('jose') )        
-
-print()
+alumnos.close()
+notas.close()
+salida.close()
