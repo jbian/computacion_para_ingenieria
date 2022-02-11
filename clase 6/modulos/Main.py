@@ -6,7 +6,18 @@ Created on Fri Feb 11 09:01:06 2022
 """
 
 # importar modulo
-import artimetica
-print(artimetica.sumar(1,1))
-print(artimetica.div(1,1))
-print(artimetica.restar(1,1))
+import aritmetica
+print(aritmetica.sumar(1,1))
+print(aritmetica.div(1,1))
+print(aritmetica.restar(1,1))
+
+# otra menera de import solo funciones especificas
+"""
+from aritmetica import sumar, div
+
+print(sumar(1,1))
+print(div(1,1))
+"""
+# importar todas las funciones de la libreria
+from aritmetica import *
+print(sumar(1,1))
