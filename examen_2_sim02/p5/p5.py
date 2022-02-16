@@ -25,6 +25,7 @@ class Bicicleta(Vehiculo):
         self.tipoFreno=tipoFreno
 
 class Persona:
+    
     def __init__(self, nombre , ci, vehiculo):
         self.nombre=nombre
         self.ci=ci
