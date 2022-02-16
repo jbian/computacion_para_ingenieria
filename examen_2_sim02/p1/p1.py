@@ -13,6 +13,7 @@ def sumar():
     suma= op1 + op2
     print("la suma es ", suma)
     label_res.config(text=f"The sum is: {op1} + {op2} = {suma}")
+    
 #crear un windows
 window = Tk()
 window.geometry('400x400')
